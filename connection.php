@@ -1,3 +1,3 @@
 <?php
-$mysqli = new mysqli('localhost', 'root', '', 'itsourcecode');
+$mysqli = new mysqli('localhost', 'root', '', 'cp');
 ?>
