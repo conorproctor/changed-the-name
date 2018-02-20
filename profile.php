@@ -82,7 +82,7 @@ include 'connection.php';
             </td>
         </tr>
         <tr>
-            <td>Max distance you'd walk to college (kms):</td>
+            <td>Max distance you'd walk to college in KM:</td>
             <td>
                 <?php echo $profile_data['distance'] ?>
             </td>
@@ -94,13 +94,13 @@ include 'connection.php';
             </td>
         </tr>
         <tr>
-            <td>Monthly rent:</td>
+            <td>Monthly rent (max):</td>
             <td>
                 <?php echo $profile_data['rent'] ?>
             </td>
         </tr>
         <tr>
-            <td>Deposit:</td>
+            <td>Deposit (max):</td>
             <td>
                 <?php echo $profile_data['deposit'] ?>
             </td>
