@@ -117,6 +117,18 @@ include 'connection.php';
                 <?php echo $profile_data['room'] ?>
             </td>
         </tr>
+        <tr>
+            <td>Desired amenities:</td>
+            <td>
+                <?php echo $profile_data['amenities'] ?>
+            </td>
+        </tr>
+        <tr>
+            <td>Desired nearby facilities:</td>
+            <td>
+                <?php echo $profile_data['nearby_facilities'] ?>
+            </td>
+        </tr>
 
     </table>
   </center>

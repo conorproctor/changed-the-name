@@ -9,23 +9,28 @@ session_start();?>
     <title>HouseFindr</title>
     <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <head>
-    <body style="background-image:url('img/backimg.jpg')">
-  </head>
-</head>
-
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <br><br><center><i class="fa fa-user" style="font-size:120px;color:blue"></i></center>
+      <br>
+      <body style="background-color:gray">
+    <body>
     <?php
+
     if (!isset($_SESSION['username'])) { ?>
     <h1><center>Login</center></h1>
     <center><form method="post" action="login-action.php">
-       <label>Username:</label><br> <input type="text" name="username" /><br>
-       <label>Password:</label><br> <input type="password" name="password" /><br>
+       <br> <input type="text" name="username" placeholder = "Username" /><br>
+       <input type="password" name="password" placeholder = "Password" /><br>
        <input type="submit" value="Login" /> </form><br>
         Not a member yet? Click <a href="registration.php">here</a> to register.
 
     </center>
+    <style>  input{
+     text-align:center;
+}
+  <style>
   <?php } else if (isset($_SESSION['username'])) { ?>
 
     <a href="profile.php?user=<?php echo $_SESSION['username'] ?>" title="View My Profile">

@@ -6,13 +6,15 @@ session_start();
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Registration</title>
+    <title>HouseFindr</title>
     <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    </head>
-    <body style="background-image:url('img/backimg.jpg')">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+    <body>
+    <br><br><center><i class="fa fa-user-plus" style="font-size:120px;color:blue"></i></center>
+    <br>
+    <body style="background-color:gray">
 <body>
 <?php
   if (!isset($_SESSION['username'])) { ?>
@@ -32,7 +34,10 @@ session_start();
 
     <input type="submit" name="submit"  value="Register" />
   </form>
-
+  <style>  input{
+   text-align:center;
+  }
+  <style>
 
   <br>Already a member? Click <a href="index.php">here</a> to login.
 <?php } else { ?>

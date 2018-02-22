@@ -37,6 +37,8 @@ if (isset($_GET['user'])) {
       <label>Deposit:</label><br> <input type="text" name="deposit" value="<?php echo $user_data['deposit'] ?>" /><br>
       <label>Move in date:</label><br> <input type="text" name="move_in" value="<?php echo $user_data['move_in'] ?>" /><br>
       <label>Room type:</label><br> <input type="text" name="room" value="<?php echo $user_data['room'] ?>" /><br>
+      <label>Amenities:</label><br> <input type="text" name="amenities" value="<?php echo $user_data['amenities'] ?>" /><br>
+      <label>Nearby facilities:</label><br> <input type="text" name="nearby_facilities" value="<?php echo $user_data['nearby_facilities'] ?>" /><br>
 
       <br>
        <input type="submit" name="update_profile" value="Update Profile" />
